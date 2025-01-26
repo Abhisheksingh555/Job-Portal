@@ -34,5 +34,5 @@ A **Job Portal** platform designed to connect job seekers with employers, offeri
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/job-portal.git
+   git clone https://github.com/Abhisheksingh555/Job-Portal.git
    cd job-portal
