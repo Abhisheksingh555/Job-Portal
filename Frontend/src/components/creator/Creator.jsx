@@ -1,61 +1,96 @@
-import React from 'react'
-import Navbar from '../components_lite/Navbar'
-import amreshsir from './amreshsir.jpg'; // Import the local image
-import ankit from './Ankit.jpg';
-import ritik from './ritik.jpg';
-import gaurav from './gaurav.jpg';
+import React from "react";
+import Navbar from "../components_lite/Navbar";
+import Abhi_01 from "./Abhi_01.jpg";
+import Abhi_02 from "./Abhi_02.jpg";
+import Abhi_03 from "./Abhi_03.jpg";
+import Abhi_04 from "./Abhi_04.jpg";
 
 const Creator = () => {
   return (
-    <div>
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
       <Navbar />
-      <div className="flex flex-col items-center justify-center h-screen max-w-7xl mx-auto p-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center w-full">
-          {/* Image Section */}
+
+      <div className="flex flex-col items-center justify-center max-w-7xl mx-auto px-6 py-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center w-full">
           <div className="flex justify-center">
-            <img src={amreshsir} alt="Amresh Sir" className="h-80 object-cover rounded-lg shadow-md" />
+            <div className="relative group">
+              <img
+                src={Abhi_01}
+                alt="Abhishek Singh"
+                className="h-80 w-80 object-cover object-center rounded-2xl shadow-2xl transform transition-all duration-500 group-hover:scale-105 group-hover:rotate-2"
+              />
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            </div>
           </div>
-          {/* Text Section */}
-          <div>
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Dr. Amresh Kumar</h2>
-            <p className="text-gray-600 mb-2">Dr. Amresh Kumar completed his <strong>B.Tech in Electronics and Communication Engineering (ECE)</strong> from <strong>Shivnand Singh Institution of Technology and Management, Aligarh</strong>, in <strong>2002</strong>.</p>
-            <p className="text-gray-600 mb-2">After graduation, he joined <strong>Koderma Mines Institution</strong> as a <strong>part-time lecturer</strong>. He then pursued his <strong>M.Tech in Electrical Engineering</strong> from <strong>BIT Sindri, Dhanbad</strong>.</p>
-            <p className="text-gray-600 mb-2">He was later selected as an <strong>Assistant Professor</strong> in the <strong>Electronics and Communication Engineering (ECE) Department</strong> at <strong>MIT Muzaffarpur</strong>. During his tenure there, he also completed his <strong>Ph.D. in Electrical Engineering</strong> from <strong>Bihar University, Muzaffarpur, in 2016</strong>.</p>
-            <p className="text-gray-600">Following his Ph.D., he was transferred to <strong>Rashtrakavi Ramdhari Singh Dinkar College of Engineering (RRSDCE)</strong> as an <strong>Assistant Professor in the Electrical and Electronics Engineering (EEE) Department</strong>, where he continues to serve till date.</p>
+
+          <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl shadow-xl border border-white/10 hover:shadow-2xl transform transition-all duration-500 hover:scale-[1.02]">
+            <h2 className="text-4xl font-extrabold text-blue-400 mb-4">
+              Abhishek Singh
+            </h2>
+            <p className="text-gray-300 mb-3 leading-relaxed">
+              I’m <strong>Abhishek Singh</strong>, a passionate{" "}
+              <strong>Computer Science Engineer</strong> who loves building
+              elegant, modern web applications that blend creativity and
+              performance.
+            </p>
+            <p className="text-gray-300 mb-3 leading-relaxed">
+              My expertise includes{" "}
+              <strong>React.js, JavaScript, and Tailwind CSS</strong> for
+              frontend development, with growing experience in{" "}
+              <strong>Node.js</strong> and <strong>MongoDB</strong> for backend.
+            </p>
+            <p className="text-gray-300 mb-3 leading-relaxed">
+              I aim to design smooth, scalable, and meaningful digital
+              experiences that solve real-world problems.
+            </p>
+            <p className="text-gray-300 leading-relaxed">
+              Currently exploring the integration of{" "}
+              <strong>AI with Web Development</strong> to create intelligent,
+              adaptive, and user-friendly solutions.
+            </p>
           </div>
         </div>
       </div>
-      
-      <hr className="w-full border-gray-300 my-6" />
-      
-      <div className="text-center p-6">
-        <h2 className="text-2xl font-bold text-gray-800 mb-6">Developers and Designers</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Developer 1 - Ankit Pathak */}
-          <a href="https://ankitpathak.vercel.app/" target="_blank" rel="noopener noreferrer" className="block text-center">
-            <img src={ankit} alt="Ankit Pathak" className="mx-auto rounded-lg shadow-md" />
-            <h3 className="text-lg font-semibold text-gray-700 mt-2">Ankit Pathak</h3>
-            <p className="text-gray-600 text-sm">Registration No: 21110125035</p>
-            <p className="text-gray-600 text-sm">Full Stack Developer</p>
-          </a>
-          {/* Developer 2 - Ritik Shrivastava */}
-          <a href="#" className="block text-center">
-            <img src={ritik} alt="Ritik Shrivastava" className="mx-auto rounded-lg shadow-md" />
-            <h3 className="text-lg font-semibold text-gray-700 mt-2">Ritik Shrivastava</h3>
-            <p className="text-gray-600 text-sm">Registration No: 21110125043</p>
-            <p className="text-gray-600 text-sm">UI/UX Designer</p>
-          </a>
-          {/* Developer 3 - Gaurav Kumar */}
-          <a href="#" className="block text-center">
-            <img src={gaurav} alt="Gaurav Kumar" className="mx-auto rounded-lg shadow-md" />
-            <h3 className="text-lg font-semibold text-gray-700 mt-2">Gaurav Kumar</h3>
-            <p className="text-gray-600 text-sm">Registration No: 21110125023</p>
-            <p className="text-gray-600 text-sm">Research</p>
-          </a>
+
+      <hr className="w-5/6 mx-auto border-gray-700 my-10" />
+
+      <div className="text-center max-w-6xl mx-auto px-6 pb-16">
+        <h2 className="text-3xl font-bold text-blue-400 mb-10">
+          Developers & Designers
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+          {[
+            {
+              img: Abhi_02,
+              role: "Frontend Developer",
+              sub: "Registration No: 211101250XX",
+            },
+            { img: Abhi_03, role: "UI/UX Designer", sub: "Creative Designer" },
+            { img: Abhi_04, role: "Research & AI Integration", sub: "Innovator" },
+          ].map((dev, index) => (
+            <div
+              key={index}
+              className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/10 shadow-lg hover:shadow-2xl transform transition-all duration-500 hover:-translate-y-3 hover:scale-105"
+            >
+              <div className="relative flex justify-center">
+                <img
+                  src={dev.img}
+                  alt="Abhishek Singh"
+                  className="h-40 w-40 object-cover object-center rounded-full shadow-xl transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+              <h3 className="text-lg font-semibold text-white mt-4">
+                Abhishek Singh
+              </h3>
+              <p className="text-gray-300 text-sm">{dev.sub}</p>
+              <p className="text-gray-400 text-sm">{dev.role}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Creator
+export default Creator;
