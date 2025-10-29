@@ -1,76 +1,81 @@
-# 💼 JobJunction – Full Stack Job Portal Website
+# MERN Stack Job Portal
 
-[![GitHub Stars](https://img.shields.io/github/stars/Abhisheksingh555/Job-Portal?style=flat)](https://github.com/Abhisheksingh555/Job-Portal/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/Abhisheksingh555/Job-Portal?style=flat)](https://github.com/Abhisheksingh555/Job-Portal/network/members)
-[![Issues](https://img.shields.io/github/issues/Abhisheksingh555/Job-Portal)](https://github.com/Abhisheksingh555/Job-Portal/issues)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Abhisheksingh555/Job-Portal/pulls)
+Welcome to the Job Portal project! This project is a job portal application built using the MERN stack (MongoDB, Express, React, Node.js).
 
-📦 **GitHub Repo:** [Abhisheksingh555/Job-Portal](https://github.com/Abhisheksingh555/Job-Portal)  
-🌐 **Live Demo:** [JobJunction on Vercel](https://mern-job-portal-lakshay.vercel.app/)  
+## Table of Contents
 
-A robust **MERN stack** job portal for browsing, posting, and managing jobs with secure authentication and a sleek, responsive UI.
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
----
+## Project Overview
 
-## 📌 Table of Contents
-- [Description](#-description)
-- [Features](#-features)
-  - [User Features](#-user-features)
-  - [Admin Features](#-admin-features)
-  - [Key Highlights](#-key-highlights)
-- [Tech Stack](#-tech-stack)
-- [Project Structure](#-project-structure)
-- [Getting Started](#-getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Environment Variables](#environment-variables)
-  - [Run Locally](#run-locally)
-- [Usage](#-usage)
-- [Links](#-links)
-- [Screenshots](#-screenshots)
-- [Roadmap](#-roadmap)
-- [Contributing](#-contributing)
-- [Acknowledgements](#-acknowledgements)
+This Job Portal application allows users to search and apply for jobs, as well as for employers to post job openings. The application is built using the MERN stack, which provides a robust and efficient development environment for full-stack applications.
 
----
+## Features
 
-## 💡 Description
-**JobJunction** is a full-stack job portal that lets users browse jobs, apply, and post their own listings. It supports secure authentication via **Email/Password** and **Google Login (Firebase Authentication)**. Users can filter jobs by **title**, **location**, and **posting time**. Admins can moderate content, manage users, and oversee job listings. 
+- User authentication and authorization
+- Job listing and search functionality
+- Job application process
+- Employer dashboard for managing job postings
+- Responsive design for mobile and desktop
 
-This app bridges the gap between job seekers and employers with clean UX, pagination, and easy management tools.
+## Installation
 
----
+To run this project locally, follow these steps:
 
-## 🚀 Features
+### Backend Setup
 
-### 👤 User Features
-- 🔑 **Login / Signup** with email & password
-- 📧 **Google Login** via Firebase Authentication
-- 🍽️ **Job Listings** with detailed descriptions
-- 🔍 **Filters** by title, location, and posting time
-- 💼 **Post & Manage Listings** (create, edit, delete)
-- 🗂️ **Pagination** for smooth navigation
+1. Navigate to the backend directory:
+   ```bash
+   cd ./backend
+   ```
 
-### 🧑‍💼 Admin Features
-- 🔐 **Admin Login** to a secure dashboard
-- 📝 **Job Management** (update / delete)
-- 👥 **User Management** & query handling
-- 🛠️ **Content Moderation**
-- 📊 **Basic Analytics / Reporting** (if enabled)
+2. Install the required dependencies:
+   ```bash
+   npm i
+   ```
 
-### 💡 Key Highlights
-- 🔒 Secure auth (Email/Password + Google)
-- 📑 Rich job details (role, location, description, etc.)
-- 🎯 Smart filtering
-- 🧭 Easy navigation with pagination
-- 📱 Responsive UI (mobile & desktop)
+3. Start the backend server:
+   ```bash
+   npm run dev
+   ```
 
----
+   You should see the following messages:
+   ```
+   "Your server is running on a port"
+   "MongoDB connected..."
+   ```
 
-## 🧰 Tech Stack
-**Frontend**: React.js, CSS3, Bootstrap, JavaScript, Axios  
-**Backend**: Node.js, Express.js  
-**Database**: MongoDB (NoSQL)  
-**Auth**: Firebase Authentication (Google Login)
+### Frontend Setup
 
----
+1. Navigate to the frontend directory:
+   ```bash
+   cd ./frontend
+   ```
+
+2. Install the required dependencies:
+   ```bash
+   npm i
+   ```
+
+3. Start the frontend development server:
+   ```bash
+   npm run dev
+   ```
+
+## Usage
+
+Once both the backend and frontend servers are running, you can access the application on your local machine. The default development server is typically available at `http://localhost:3000`.
+
+## Contributing
+
+Contributions are welcome! If you would like to contribute to this project, please fork the repository and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
